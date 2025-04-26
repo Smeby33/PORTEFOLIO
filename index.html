@@ -799,40 +799,37 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
+          
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Ton Nom</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                  <input type="text" name="name" id="name-field" class="form-control" required>
                 </div>
-
+          
                 <div class="col-md-6">
                   <label for="email-field" class="pb-2">Ton Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                  <input type="email" name="email" id="email-field" class="form-control" required>
                 </div>
-
+          
                 <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Object</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                  <label for="subject-field" class="pb-2">Objet</label>
+                  <input type="text" name="subject" id="subject-field" class="form-control" required>
                 </div>
-
+          
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  <textarea name="message" id="message-field" class="form-control" rows="10" required></textarea>
                 </div>
-
+          
                 <div class="col-md-12 text-center">
-                  <div class="loading">Chargement...</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Votre message a bien été envoyé. Merci !</div>
-
                   <button type="submit">Envoyer le message</button>
                 </div>
-
+          
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
+          <!-- End Contact Form -->
 
         </div>
 
@@ -935,7 +932,24 @@
       document.getElementById('result').innerHTML = '';
     }
   </script>
-
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Empêcher l'envoi normal du formulaire
+    
+      // Récupération des champs
+      const name = document.getElementById('name-field').value;
+      const email = document.getElementById('email-field').value;
+      const subject = document.getElementById('subject-field').value;
+      const message = document.getElementById('message-field').value;
+    
+      // Construction de l'URL mailto
+      const mailtoLink = `mailto:smebedoh33@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Nom : ' + name + '\nEmail : ' + email + '\n\nMessage :\n' + message)}`;
+    
+      // Ouvrir Gmail ou l'application mail par défaut
+      window.location.href = mailtoLink;
+    });
+    </script>
+    
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
