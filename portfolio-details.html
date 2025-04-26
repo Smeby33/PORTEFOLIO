@@ -26,7 +26,23 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+    <Style>
+     .container {
+      margin-bottom:5em; /* Rapport 16:9 (hauteur automatique) */
+      }
 
+      #iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      .portfolio-details-slider {
+        margin-bottom: 20px;
+      }     
+    </Style>
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -48,14 +64,14 @@
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Alex Smith</h1>
+      <h5 class="sitename">SAGOUNAMA-MENSAH Emmanuel</h5>
     </a>
 
     <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
       <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
       <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
       <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
     </div>
 
@@ -107,7 +123,7 @@
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div id="app-1" class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
@@ -137,15 +153,11 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="">
+                  <img src="assets/img/portfolio/app-1d1.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/books-1.jpg" alt="">
+                  <img src="assets/img/portfolio/app-1d2.jpg" alt="">
                 </div>
 
               </div>
@@ -155,25 +167,373 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
+              <h3>Informations sur le projet</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Catégorie</strong> : Application Web (SaaS)</li>
+                <li><strong>Client</strong> : Afup</li>
+                <li><strong>Date du projet</strong> : 15 Mars 2025</li>
+                <li><strong>URL du projet</strong> : <a href="https://gesworker.vercel.app/" target="_blank">www.ropona-robiandja.com</a></li>
+                <li><strong>Technologies</strong> :
+                  <ul>
+                    <li>React.js (Front-end)</li>
+                    <li>Node.js & Express (Back-end)</li>
+                    <li>MySQL (Base de données)</li>
+                    <li>Firebase Authentication (Connexion sécurisée)</li>
+                    <li>TailwindCSS (Design responsive)</li>
+                  </ul>
+                </li>
               </ul>
             </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
+            
+          </div>
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>Application de gestion et de suivi de tâches</h2>
+            <p>
+              <strong>Ropona & Robiandja</strong> est une application web intuitive de gestion de tâches et de suivi de missions pour entreprises. 
+              Elle propose deux espaces distincts : un tableau de bord pour les administrateurs pour piloter les projets et gérer les équipes, 
+              et un espace pour les intervenants pour suivre l'avancement de leurs missions en temps réel.
+              <br><br>
+              Développée avec une approche moderne (React.js, Node.js, MySQL), l'application offre des fonctionnalités essentielles comme l'assignation de tâches, 
+              les notifications, la visualisation sur calendrier, la gestion de documents et une authentification sécurisée avec Firebase.
+              <br><br>
+              Ce projet illustre ma capacité à concevoir des solutions web complètes, optimisées et sécurisées, en combinant front-end, back-end et base de données.
+            </p>
           </div>
 
         </div>
-
+      
       </div>
+      <div id="app-2" class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+      
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+      
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+      
+              <div class="swiper-wrapper align-items-center">
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-2.jpg" alt="Capture d'écran du tableau de bord élection">
+                </div>
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-2d1.jpg" alt="Capture d'écran suivi en temps réel">
+                </div>
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-2d2.jpg" alt="Capture d'écran résultats électoraux">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-2d3.jpg" alt="Capture d'écran résultats électoraux">
+                </div>
+      
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+      
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Informations sur le projet</h3>
+              <ul>
+                <li><strong>Catégorie</strong> : Application Web (Événementiel / Suivi électoral)</li>
+                <li><strong>Client</strong> : Commission Electorale 1er & 2em</li>
+                <li><strong>Date du projet</strong> : 12 Avril 2025</li>
+                <li><strong>URL du projet</strong> : <a href="https://election-presidentielle.vercel.app/" target="_blank">www.suivi-election2025.com</a></li>
+                <li><strong>Technologies</strong> :
+                  <ul>
+                    <li>React.js (Front-end)</li>
+                    <li>Node.js & Express (Back-end)</li>
+                    <li>MySQL (Base de données)</li>
+                    <li>Socket.io (Mise à jour en temps réel)</li>
+                    <li>TailwindCSS (Interface moderne et responsive)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>Application de Suivi des Résultats Présidentiels 2025</h2>
+            <p>
+              Cette application web permet de suivre en temps réel le déroulement de l'élection présidentielle. 
+              Elle centralise les remontées de résultats des différents bureaux de vote et affiche une visualisation claire et dynamique des scores des candidats par région.
+              <br><br>
+              Développée avec React.js pour une interface rapide et fluide, et un back-end Node.js/Express pour la gestion des données, 
+              elle utilise Socket.io pour les mises à jour instantanées sans rechargement de page. La base de données MySQL garantit la sécurité et l'intégrité des résultats.
+              <br><br>
+              Ce projet démontre ma capacité à concevoir des systèmes critiques en temps réel, fiables et accessibles à grande échelle, avec une attention particulière à la performance et à l'expérience utilisateur et mon esprit d'équipe avec les membres du Hub municipale du 2arr de Port-gentil.
+            </p>
+          </div>
+      
+        </div>
+      
+      </div>
+      <div id="app-3" class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+      
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+      
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+      
+              <div class="swiper-wrapper align-items-center">
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-3.jpg" alt="Vue 3D du Système Solaire">
+                </div>
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-3d1.jpg" alt="Planètes en 3D">
+                </div>
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-3d2.jpg" alt="Simulation Orbitale">
+                </div>
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-3d3.jpg" alt="Interface éducative du système solaire">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-3d4.jpg" alt="Interface éducative du système solaire">
+                </div>
+      
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+      
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Informations sur le projet</h3>
+              <ul>
+                <li><strong>Catégorie</strong> : Application Web (Éducation / 3D)</li>
+                <li><strong>Client</strong> : Projet personnel</li>
+                <li><strong>Date du projet</strong> : 28 juillet 2024</li>
+                <li><strong>URL du projet</strong> : <a href="https://orery241.vercel.app/" target="_blank">www.systeme-solaire3d.com</a></li>
+                <li><strong>Technologies</strong> :
+                  <ul>
+                    <li>React.js (Front-end)</li>
+                    <li>Three.js (Rendu 3D)</li>
+                    <li>React Three Fiber (Intégration 3D dans React)</li>
+                    <li>React Spring (Animations fluides)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>Application Éducative : Visualisation du Système Solaire en 3D</h2>
+            <p>
+              Cette application web interactive permet aux utilisateurs de découvrir et d'explorer le système solaire en 3D. 
+              Chaque planète est modélisée avec précision et animée en orbite autour du Soleil, offrant une expérience éducative immersive.
+              <br><br>
+              Conçue avec React.js et la bibliothèque Three.js via React Three Fiber, l'application allie performances graphiques, 
+              fluidité d'interaction et pédagogie. Les utilisateurs peuvent naviguer librement, zoomer sur les planètes, et visualiser leur mouvement en temps réel.
+              <br><br>
+              Ce projet démontre ma capacité à combiner technologies web modernes et rendu 3D pour créer des expériences interactives innovantes et accessibles.
+            </p>
+          </div>
+      
+        </div>
+      
+      </div>
+      <div id="app-4" class="container" data-aos="fade-up" data-aos-delay="100">       
+
+        <div class="row gy-4">
+      
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+      
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+      
+              <div class="swiper-wrapper align-items-center">
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-4.jpg" alt="Page d'accueil refondue de l'agence de voyage">
+                </div>
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-4d1.jpg" alt="Section destinations populaires">
+                </div>
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-4d2.jpg" alt="Section offres spéciales">
+                </div>
+      
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+      
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Informations sur le projet</h3>
+              <ul>
+                <li><strong>Catégorie</strong> : Site Web (Refonte / Voyage)</li>
+                <li><strong>Client</strong> : Projet personnel</li>
+                <li><strong>Date du projet</strong> : 5 Juin 2024</li>
+                <li><strong>URL du projet</strong> : <a href="https://smeby33.github.io/flygabon/" target="_blank">www.agencevoyage2025.com</a></li>
+                <li><strong>Technologies</strong> :
+                  <ul>
+                    <li>HTML5 (Structure)</li>
+                    <li>CSS3 (Mise en page et animations)</li>
+                    <li>Responsive Design (Compatibilité mobile/tablette)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>Refonte de Site Web : Agence de Voyage</h2>
+            <p>
+              Ce projet est une proposition de refonte du site web d'une agence de voyage, visant à moderniser son image et à améliorer l'expérience utilisateur.
+              <br><br>
+              Réalisé entièrement en HTML5 et CSS3, le site présente une interface épurée, des sections bien organisées, et une compatibilité optimale sur tous les supports (ordinateurs, tablettes, mobiles).
+              <br><br>
+              Ce travail démontre ma capacité à concevoir des interfaces attractives et fonctionnelles en utilisant uniquement des technologies front-end classiques, tout en respectant les bonnes pratiques de responsive design.
+            </p>
+          </div>
+      
+        </div>
+      
+      </div>
+      <div id="app-5" class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+      
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+      
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+      
+              <div class="swiper-wrapper align-items-center">
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-5.jpg" alt="Liste de tâches sans style graphique">
+                </div>
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-5d1.jpg" alt="Ajout de tâches en React.js">
+                </div>
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-5d2.jpg" alt="Suppression et modification de tâches React">
+                </div>
+      
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-5d3.jpg" alt="Application de gestion de tâches minimaliste">
+                </div>
+      
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+      
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Informations sur le projet</h3>
+              <ul>
+                <li><strong>Catégorie</strong> : Application Web (Gestion de tâches / Début de parcours)</li>
+                <li><strong>Client</strong> : Projet personnel</li>
+                <li><strong>Date du projet</strong> : 12 Mai 2024</li>
+                <li><strong>URL du projet</strong> : <a href="https://ema-taches.vercel.app/" target="_blank">www.gestion-taches2024.com</a></li>
+                <li><strong>Technologies</strong> :
+                  <ul>
+                    <li>React.js (Gestion d'états avec useState et useEffect)</li>
+                    <li>JavaScript (Manipulation du DOM virtuel)</li>
+                    <li>HTML5 & CSS3 (Structure basique sans mise en forme avancée)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>Première Application : Gestion de Tâches Minimaliste</h2>
+            <p>
+              Ce projet marque le tout début de mon apprentissage de React.js. 
+              L'objectif était de comprendre et d'appliquer la gestion des états avec <code>useState</code>, 
+              le cycle de vie des composants avec <code>useEffect</code>, et l'interaction avec le DOM virtuel.
+              <br><br>
+              Sans focus sur le style graphique, cette application se concentre sur les fonctionnalités essentielles : 
+              ajout, modification et suppression de tâches. 
+              <br><br>
+              Ce projet reste un souvenir marquant de mes premiers pas dans le développement front-end moderne et témoigne de l'évolution de mon parcours.
+            </p>
+          </div>
+      
+        </div>
+      
+      </div>
+      
+      
+      
+      
+
 
     </section><!-- /Portfolio Details Section -->
 
